@@ -17,6 +17,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let hideKeyboardGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        scrollView?.addGestureRecognizer(hideKeyboardGesture)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -51,6 +53,12 @@ class LoginViewController: UIViewController {
         }
     
     @IBAction func loginButtonPressed(_ sender: Any) {
+        let login = loginInput.text!
+        let password = passwordInput.text!
+        
+        if login == "1" && password == "1" {
+        } else {
+        }
     }
 }
 
