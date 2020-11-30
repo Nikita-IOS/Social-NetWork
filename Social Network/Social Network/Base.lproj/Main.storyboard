@@ -29,8 +29,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3q-ES-emi">
-                                                <rect key="frame" x="186.5" y="180" width="41.5" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логин" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3q-ES-emi">
+                                                <rect key="frame" x="183" y="180" width="48.5" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -40,8 +40,8 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1B0-ip-f3X">
-                                                <rect key="frame" x="186.5" y="305" width="41.5" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1B0-ip-f3X">
+                                                <rect key="frame" x="177.5" y="305" width="59" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -52,8 +52,11 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pr-Ha-dXz">
-                                                <rect key="frame" x="184" y="425" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <rect key="frame" x="185" y="425" width="44" height="30"/>
+                                                <state key="normal" title="Войти"/>
+                                                <connections>
+                                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oTI-RX-WsZ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -70,7 +73,7 @@
                                             <constraint firstItem="U3q-ES-emi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0J4-hf-JUJ" secondAttribute="leading" constant="60" id="SBH-1A-5dD"/>
                                             <constraint firstItem="U3q-ES-emi" firstAttribute="top" secondItem="wsz-GV-IfT" secondAttribute="bottom" constant="70" id="SoC-fO-adV"/>
                                             <constraint firstItem="KF8-Hg-t2M" firstAttribute="width" secondItem="0J4-hf-JUJ" secondAttribute="width" multiplier="0.6" id="Stk-Lo-mi4"/>
-                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="5pr-Ha-dXz" secondAttribute="bottom" constant="120" id="Y7q-bJ-7Lq"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="5pr-Ha-dXz" secondAttribute="bottom" constant="20" id="Y7q-bJ-7Lq"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wsz-GV-IfT" secondAttribute="trailing" constant="60" id="fDU-QC-3vw"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1B0-ip-f3X" secondAttribute="trailing" constant="60" id="hc8-XF-FWO"/>
                                             <constraint firstItem="1B0-ip-f3X" firstAttribute="centerX" secondItem="0J4-hf-JUJ" secondAttribute="centerX" id="ibg-bL-OHp"/>
@@ -103,6 +106,11 @@
                             <constraint firstItem="xd3-yT-XP2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="omR-Cb-ELO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginInput" destination="KF8-Hg-t2M" id="016-hf-9It"/>
+                        <outlet property="passwordInput" destination="TP5-yN-Kjv" id="ehw-NW-H7o"/>
+                        <outlet property="scrollView" destination="xd3-yT-XP2" id="aEw-SV-tVe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
