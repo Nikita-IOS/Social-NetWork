@@ -57,7 +57,7 @@ class LoginViewController: UIViewController {
         let password = passwordInput.text!
         
         if login == "1" && password == "1" {
-        } else {
+            performSegue(withIdentifier: "goToTabBar", sender: nil)
         }
     }
 }
