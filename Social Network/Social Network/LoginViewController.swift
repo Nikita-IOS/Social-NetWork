@@ -58,6 +58,11 @@ class LoginViewController: UIViewController {
         
         if login == "1" && password == "1" {
             performSegue(withIdentifier: "goToTabBar", sender: nil)
+        } else {
+            let alert = UIAlertController(title: "Ошибка", message: "Введены неверные данные пользователя", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alert.addAction(action)
+            present(alert, animated: true, completion: nil)
         }
     }
 }
