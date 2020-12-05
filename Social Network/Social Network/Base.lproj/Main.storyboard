@@ -139,13 +139,13 @@
         <!--Your Groups-->
         <scene sceneID="cdA-42-EFJ">
             <objects>
-                <tableViewController id="aBr-Sd-e2O" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="MyGroupsTableViewController" storyboardIdentifier="MyGroupsTableViewController" id="aBr-Sd-e2O" customClass="MyGroupsTableViewController" customModule="Social_Network" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="DNB-4c-tJ9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="CgD-5c-WYK">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MyGroupsTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="CgD-5c-WYK" customClass="MyGroupsTableViewCell" customModule="Social_Network" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CgD-5c-WYK" id="fTT-Ne-crh">
@@ -171,13 +171,13 @@
         <!--All Groups-->
         <scene sceneID="kui-Mo-rSo">
             <objects>
-                <tableViewController id="yxl-DS-bZd" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="AllGroupsTableViewController" storyboardIdentifier="AllGroupsTableViewController" id="yxl-DS-bZd" customClass="AllGroupsTableViewController" customModule="Social_Network" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Kwo-LF-ld8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="udl-0y-leC">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="AllGroupsTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="udl-0y-leC" customClass="AllGroupsTableViewCell" customModule="Social_Network" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="udl-0y-leC" id="xb6-z4-YwT">
@@ -200,13 +200,13 @@
         <!--Your Friends-->
         <scene sceneID="4Jb-qg-t4p">
             <objects>
-                <tableViewController id="d3w-MT-saZ" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="MyFriendsTableViewController" storyboardIdentifier="MyFriendsTableViewController" id="d3w-MT-saZ" customClass="MyFriendsTableViewController" customModule="Social_Network" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="13w-FP-hgR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="NMu-Eq-Yvr">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="NMu-Eq-Yvr" customClass="MyFriendsTableViewCell" customModule="Social_Network" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NMu-Eq-Yvr" id="4Lw-Dz-93W">
@@ -232,7 +232,7 @@
         <!--Photo-->
         <scene sceneID="PmP-YP-CuW">
             <objects>
-                <collectionViewController id="VZm-w9-Gnz" sceneMemberID="viewController">
+                <collectionViewController restorationIdentifier="FriendsPhotoCollectionViewController" storyboardIdentifier="FriendsPhotoCollectionViewController" id="VZm-w9-Gnz" customClass="FriendsPhotoCollectionViewController" customModule="Social_Network" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="UjK-33-hWR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -244,7 +244,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ZdX-NY-eu8">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="FriendsPhotoCollectionViewCell" id="ZdX-NY-eu8" customClass="FriendsPhotoCollectionViewCell" customModule="Social_Network" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9zx-Yx-lDn">
