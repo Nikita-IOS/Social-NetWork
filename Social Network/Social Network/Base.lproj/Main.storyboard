@@ -136,7 +136,7 @@
             </objects>
             <point key="canvasLocation" x="1152" y="93"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Your Groups-->
         <scene sceneID="cdA-42-EFJ">
             <objects>
                 <tableViewController id="aBr-Sd-e2O" sceneMemberID="viewController">
@@ -162,13 +162,13 @@
                             <outlet property="delegate" destination="aBr-Sd-e2O" id="544-rb-pab"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="TK5-gs-lAF"/>
+                    <navigationItem key="navigationItem" title="Your Groups" id="TK5-gs-lAF"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ga9-yd-yDu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2902.898550724638" y="-206.25"/>
         </scene>
-        <!--Table View Controller-->
+        <!--All Groups-->
         <scene sceneID="kui-Mo-rSo">
             <objects>
                 <tableViewController id="yxl-DS-bZd" sceneMemberID="viewController">
@@ -191,13 +191,13 @@
                             <outlet property="delegate" destination="yxl-DS-bZd" id="C0s-f4-2P1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="QVw-fT-LqC"/>
+                    <navigationItem key="navigationItem" title="All Groups" id="QVw-fT-LqC"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGC-1m-Pnh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3774" y="-206"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Your Friends-->
         <scene sceneID="4Jb-qg-t4p">
             <objects>
                 <tableViewController id="d3w-MT-saZ" sceneMemberID="viewController">
@@ -223,13 +223,13 @@
                             <outlet property="delegate" destination="d3w-MT-saZ" id="k3X-zp-mc8"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="p0V-jO-wFI"/>
+                    <navigationItem key="navigationItem" title="Your Friends" id="p0V-jO-wFI"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u7T-wM-Z4A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2903" y="500"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Photo-->
         <scene sceneID="PmP-YP-CuW">
             <objects>
                 <collectionViewController id="VZm-w9-Gnz" sceneMemberID="viewController">
@@ -258,17 +258,17 @@
                             <outlet property="delegate" destination="VZm-w9-Gnz" id="Xe9-1t-9eN"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="SQu-rq-BdV"/>
+                    <navigationItem key="navigationItem" title="Photo" id="SQu-rq-BdV"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0R-LH-oqM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3774" y="500"/>
         </scene>
-        <!--Item-->
+        <!--Friends-->
         <scene sceneID="8eY-fG-LVc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4DI-d7-4fh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="MCI-zT-6jS"/>
+                    <tabBarItem key="tabBarItem" title="Friends" image="person.2.fill" catalog="system" id="MCI-zT-6jS"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0pT-QW-ixl">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -283,11 +283,11 @@
             </objects>
             <point key="canvasLocation" x="1993" y="500"/>
         </scene>
-        <!--Item-->
+        <!--Groups-->
         <scene sceneID="xzb-Bb-2pM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lCQ-NO-hZC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="yYS-52-AMI"/>
+                    <tabBarItem key="tabBarItem" title="Groups" image="person.3.fill" catalog="system" id="yYS-52-AMI"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mro-Sv-2ER">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -304,6 +304,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person.2.fill" catalog="system" width="128" height="80"/>
+        <image name="person.3.fill" catalog="system" width="128" height="61"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
