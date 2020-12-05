@@ -178,6 +178,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="groupImage" destination="Wdv-AO-hpu" id="GP3-oK-nUX"/>
+                                    <outlet property="titleLabel" destination="STn-bJ-kvm" id="aG3-px-Lb7"/>
                                     <segue destination="yxl-DS-bZd" kind="show" id="NKW-zw-xON"/>
                                 </connections>
                             </tableViewCell>
@@ -234,6 +236,10 @@
                                         <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="QqC-D2-se3" secondAttribute="bottom" constant="2" id="rlA-Lt-dSU"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="groupImage" destination="Ge5-ak-VKP" id="mHt-T3-Ov4"/>
+                                    <outlet property="titleLabel" destination="QqC-D2-se3" id="0b8-XN-Ip0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -289,6 +295,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="avatarImage" destination="a8c-k2-mqi" id="KnI-wc-Ffb"/>
+                                    <outlet property="nameLabel" destination="oqf-lK-3kk" id="HIK-Wu-6He"/>
                                     <segue destination="VZm-w9-Gnz" kind="show" id="1Qr-Op-Lgh"/>
                                 </connections>
                             </tableViewCell>
@@ -337,6 +345,9 @@
                                         <constraint firstItem="AIk-qE-SI7" firstAttribute="leading" secondItem="9zx-Yx-lDn" secondAttribute="leading" id="cyx-JX-rP9"/>
                                     </constraints>
                                 </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="friendImage" destination="AIk-qE-SI7" id="nKJ-4q-PF1"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
