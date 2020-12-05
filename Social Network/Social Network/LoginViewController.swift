@@ -53,12 +53,24 @@ class LoginViewController: UIViewController {
         }
     
     @IBAction func loginButtonPressed(_ sender: Any) {
+        checkLoginAndPassword()
+    }
+    
+    func checkLoginAndPassword() {
         let login = loginInput.text!
         let password = passwordInput.text!
-        
         if login == "1" && password == "1" {
+            performSegue(withIdentifier: "goToTabBar", sender: nil)
         } else {
+            showLoginError()
         }
+    }
+    
+    func showLoginError() {
+        let alert = UIAlertController(title: "Ошибка", message: "Введены неверные данные пользователя", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
     }
 }
 
