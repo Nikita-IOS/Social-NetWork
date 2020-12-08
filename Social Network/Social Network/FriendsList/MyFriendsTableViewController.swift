@@ -20,7 +20,6 @@ class MyFriendsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return friends.count
     }
 
@@ -31,6 +30,13 @@ class MyFriendsTableViewController: UITableViewController {
         cell.nameLabel.text = name
         cell.avatarImage.image = UIImage(named: avatar)
         return cell
+    }
+
+    //передача фоток пользователя
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "FriendsPhotoCollectionViewController") as! FriendsPhotoCollectionViewController
+        vc.friendPhoto = friends[indexPath.row].photo
     }
     
 }
