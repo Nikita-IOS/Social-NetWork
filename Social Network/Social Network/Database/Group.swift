@@ -10,4 +10,5 @@ import Foundation
 struct Group {
     let title: String
     let picture: String
+    var added = false
 }
