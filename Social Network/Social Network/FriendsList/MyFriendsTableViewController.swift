@@ -37,6 +37,7 @@ class MyFriendsTableViewController: UITableViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "FriendsPhotoCollectionViewController") as! FriendsPhotoCollectionViewController
         vc.friendPhoto = friends[indexPath.row].photo
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 }

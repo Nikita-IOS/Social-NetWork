@@ -304,7 +304,6 @@
                                 <connections>
                                     <outlet property="avatarImage" destination="a8c-k2-mqi" id="KnI-wc-Ffb"/>
                                     <outlet property="nameLabel" destination="oqf-lK-3kk" id="HIK-Wu-6He"/>
-                                    <segue destination="VZm-w9-Gnz" kind="show" id="1Qr-Op-Lgh"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
