@@ -7,17 +7,19 @@
 
 import Foundation
 
-class GroupsDatabase {
+class GroupDatabase {
     var myGrouplist = [Group]()
     var allGrouplist: [Group]
     
     init() {
         allGrouplist = [
-        Group(title: "Apple", Picture: "apple.jpg"),
-        Group(title: "BBC", Picture: "bbc.jpg"),
-        Group(title: "Daily Shot", Picture: "dailyshot.jpg"),
-        Group(title: "New York City", Picture: "newyork.jpg"),
-        Group(title: "Puppies", Picture: "puppies"),
-        Group(title: "Swift", Picture: "swift.jpg")]
+        Group(title: "Apple", picture: "apple.jpg"),
+        Group(title: "BBC", picture: "bbc.jpg"),
+        Group(title: "Daily Shot", picture: "dailyshot.jpg"),
+        Group(title: "New York City", picture: "newyork.jpg"),
+        Group(title: "Puppies", picture: "puppies"),
+        Group(title: "Swift", picture: "swift.jpg")]
     }
 }
+
+var groupDatabase = GroupDatabase()

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class FriendsDataBase {
+class FriendsDatabase {
     var friendlist: [Friend]
     
     init() {

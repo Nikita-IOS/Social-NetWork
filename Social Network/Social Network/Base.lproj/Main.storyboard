@@ -145,7 +145,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MyGroupsTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="CgD-5c-WYK" customClass="MyGroupsTableViewCell" customModule="Social_Network" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MyGroupsTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyGroupsTableViewCell" id="CgD-5c-WYK" customClass="MyGroupsTableViewCell" customModule="Social_Network" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="52.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CgD-5c-WYK" id="fTT-Ne-crh">
@@ -179,8 +179,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="groupImage" destination="Wdv-AO-hpu" id="GP3-oK-nUX"/>
-                                    <outlet property="titleLabel" destination="STn-bJ-kvm" id="aG3-px-Lb7"/>
-                                    <segue destination="yxl-DS-bZd" kind="show" id="NKW-zw-xON"/>
+                                    <outlet property="groupLabel" destination="STn-bJ-kvm" id="aG3-px-Lb7"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -189,7 +188,13 @@
                             <outlet property="delegate" destination="aBr-Sd-e2O" id="544-rb-pab"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Your Groups" id="TK5-gs-lAF"/>
+                    <navigationItem key="navigationItem" title="Your Groups" id="TK5-gs-lAF">
+                        <barButtonItem key="rightBarButtonItem" title="search" id="6zU-Y8-XRg">
+                            <connections>
+                                <segue destination="yxl-DS-bZd" kind="show" id="flg-C4-904"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ga9-yd-yDu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -204,7 +209,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="AllGroupsTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="udl-0y-leC" customClass="AllGroupsTableViewCell" customModule="Social_Network" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="AllGroupsTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AllGroupsTableViewCell" id="udl-0y-leC" customClass="AllGroupsTableViewCell" customModule="Social_Network" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="52.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="udl-0y-leC" id="xb6-z4-YwT">
@@ -238,7 +243,8 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="groupImage" destination="Ge5-ak-VKP" id="mHt-T3-Ov4"/>
-                                    <outlet property="titleLabel" destination="QqC-D2-se3" id="0b8-XN-Ip0"/>
+                                    <outlet property="groupLabel" destination="QqC-D2-se3" id="0b8-XN-Ip0"/>
+                                    <segue destination="81e-kK-38z" kind="unwind" identifier="addGroup" unwindAction="addGroupWithSegue:" id="yTP-Ba-fjX"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -250,6 +256,7 @@
                     <navigationItem key="navigationItem" title="All Groups" id="QVw-fT-LqC"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGC-1m-Pnh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="81e-kK-38z" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3774" y="-206"/>
         </scene>
@@ -262,7 +269,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="NMu-Eq-Yvr" customClass="MyFriendsTableViewCell" customModule="Social_Network" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyFriendsTableViewCell" id="NMu-Eq-Yvr" customClass="MyFriendsTableViewCell" customModule="Social_Network" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="65.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NMu-Eq-Yvr" id="4Lw-Dz-93W">

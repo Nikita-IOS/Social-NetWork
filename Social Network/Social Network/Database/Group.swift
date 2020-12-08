@@ -9,5 +9,5 @@ import Foundation
 
 struct Group {
     let title: String
-    let Picture: String
+    let picture: String
 }
