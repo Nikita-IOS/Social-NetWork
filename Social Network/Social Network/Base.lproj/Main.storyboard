@@ -270,40 +270,48 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyFriendsTableViewCell" id="NMu-Eq-Yvr" customClass="MyFriendsTableViewCell" customModule="Social_Network" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="65.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="60.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NMu-Eq-Yvr" id="4Lw-Dz-93W">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="65.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="60.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a8c-k2-mqi">
-                                            <rect key="frame" x="5" y="5" width="55" height="55.5"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AHd-Pb-OvY">
+                                            <rect key="frame" x="5" y="5" width="50" height="50.5"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a8c-k2-mqi">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="55" id="Cx8-0t-Sxe"/>
-                                                <constraint firstAttribute="width" constant="55" id="Cxy-60-E7D"/>
+                                                <constraint firstAttribute="height" constant="50" id="2IM-YN-eLc"/>
+                                                <constraint firstAttribute="width" constant="50" id="Az3-L2-LPV"/>
+                                                <constraint firstItem="a8c-k2-mqi" firstAttribute="top" secondItem="AHd-Pb-OvY" secondAttribute="top" id="CgJ-pb-DEQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="a8c-k2-mqi" secondAttribute="trailing" id="LHC-4P-BJ7"/>
+                                                <constraint firstItem="a8c-k2-mqi" firstAttribute="leading" secondItem="AHd-Pb-OvY" secondAttribute="leading" id="jBe-pM-hAw"/>
+                                                <constraint firstAttribute="bottom" secondItem="a8c-k2-mqi" secondAttribute="bottom" id="q4h-46-teM"/>
                                             </constraints>
-                                        </imageView>
+                                        </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqf-lK-3kk">
-                                            <rect key="frame" x="80" y="22.5" width="45" height="20.5"/>
+                                            <rect key="frame" x="75" y="20" width="45" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="a8c-k2-mqi" firstAttribute="top" secondItem="4Lw-Dz-93W" secondAttribute="top" constant="5" id="3q2-Ed-d2q"/>
-                                        <constraint firstItem="oqf-lK-3kk" firstAttribute="centerY" secondItem="4Lw-Dz-93W" secondAttribute="centerY" id="KDk-bM-IBL"/>
-                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="oqf-lK-3kk" secondAttribute="trailing" constant="10" id="KRa-v1-VXE"/>
-                                        <constraint firstAttribute="bottom" secondItem="a8c-k2-mqi" secondAttribute="bottom" constant="5" id="PnY-F6-uYH"/>
-                                        <constraint firstItem="a8c-k2-mqi" firstAttribute="leading" secondItem="4Lw-Dz-93W" secondAttribute="leading" constant="5" id="XHg-Y1-srH"/>
-                                        <constraint firstItem="oqf-lK-3kk" firstAttribute="leading" secondItem="a8c-k2-mqi" secondAttribute="trailing" constant="20" id="cYm-g0-Tzh"/>
-                                        <constraint firstItem="oqf-lK-3kk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="4Lw-Dz-93W" secondAttribute="topMargin" constant="4" id="pzF-il-R1O"/>
-                                        <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="oqf-lK-3kk" secondAttribute="bottom" constant="4" id="wFa-vU-WQK"/>
+                                        <constraint firstItem="AHd-Pb-OvY" firstAttribute="leading" secondItem="4Lw-Dz-93W" secondAttribute="leading" constant="5" id="8El-AF-XjI"/>
+                                        <constraint firstItem="AHd-Pb-OvY" firstAttribute="top" secondItem="4Lw-Dz-93W" secondAttribute="top" constant="5" id="UvU-Gw-p4d"/>
+                                        <constraint firstItem="oqf-lK-3kk" firstAttribute="leading" secondItem="AHd-Pb-OvY" secondAttribute="trailing" constant="20" id="YPn-1b-ZFx"/>
+                                        <constraint firstAttribute="bottom" secondItem="AHd-Pb-OvY" secondAttribute="bottom" constant="5" id="cmU-bq-8zL"/>
+                                        <constraint firstItem="oqf-lK-3kk" firstAttribute="centerY" secondItem="a8c-k2-mqi" secondAttribute="centerY" id="d6R-LH-5Il"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="avatarImage" destination="a8c-k2-mqi" id="KnI-wc-Ffb"/>
                                     <outlet property="nameLabel" destination="oqf-lK-3kk" id="HIK-Wu-6He"/>
+                                    <outlet property="view" destination="AHd-Pb-OvY" id="aEY-hS-D6b"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -316,7 +324,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u7T-wM-Z4A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2903" y="500"/>
+            <point key="canvasLocation" x="2902.898550724638" y="499.55357142857139"/>
         </scene>
         <!--Photo-->
         <scene sceneID="PmP-YP-CuW">
@@ -371,7 +379,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0R-LH-oqM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3774" y="500"/>
+            <point key="canvasLocation" x="3773.913043478261" y="499.55357142857139"/>
         </scene>
         <!--Friends-->
         <scene sceneID="8eY-fG-LVc">
