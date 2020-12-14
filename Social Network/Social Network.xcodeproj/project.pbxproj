@@ -25,6 +25,7 @@
 		5A295BD4257BB1AF002E3ECF /* FriendsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A295BD3257BB1AF002E3ECF /* FriendsDatabase.swift */; };
 		5A295BD8257BB5BA002E3ECF /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A295BD7257BB5BA002E3ECF /* Group.swift */; };
 		5A295BDB257BB60E002E3ECF /* GroupsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A295BDA257BB60E002E3ECF /* GroupsDatabase.swift */; };
+		5A295C0425862BA3002E3ECF /* Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A295C0325862BA3002E3ECF /* Like.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		5A295BD3257BB1AF002E3ECF /* FriendsDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsDatabase.swift; sourceTree = "<group>"; };
 		5A295BD7257BB5BA002E3ECF /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		5A295BDA257BB60E002E3ECF /* GroupsDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsDatabase.swift; sourceTree = "<group>"; };
+		5A295C0325862BA3002E3ECF /* Like.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Like.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			children = (
 				5A295BB9257BAE8F002E3ECF /* FriendsPhotoCollectionViewController.swift */,
 				5A295BBD257BAEEC002E3ECF /* FriendsPhotoCollectionViewCell.swift */,
+				5A295C0325862BA3002E3ECF /* Like.swift */,
 			);
 			path = FriendsPhoto;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				5A295BB2257BADED002E3ECF /* MyFriendsTableViewController.swift in Sources */,
 				5A295BD8257BB5BA002E3ECF /* Group.swift in Sources */,
 				5A295BD4257BB1AF002E3ECF /* FriendsDatabase.swift in Sources */,
+				5A295C0425862BA3002E3ECF /* Like.swift in Sources */,
 				5A295BBA257BAE8F002E3ECF /* FriendsPhotoCollectionViewController.swift in Sources */,
 				5A295BCA257BB063002E3ECF /* AllGroupsTableViewController.swift in Sources */,
 				5A295BCD257BB080002E3ECF /* AllGroupsTableViewCell.swift in Sources */,

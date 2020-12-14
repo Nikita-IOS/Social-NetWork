@@ -13,8 +13,11 @@ class MyFriendsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var avatarImage: UIImageView!
     
+    @IBOutlet weak var view: UIView!
+    
     override func awakeFromNib() {
-        super.awakeFromNib()
+        avatarImage.layer.cornerRadius = 25
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
