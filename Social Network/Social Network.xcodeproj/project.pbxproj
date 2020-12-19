@@ -26,6 +26,7 @@
 		5A295BD8257BB5BA002E3ECF /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A295BD7257BB5BA002E3ECF /* Group.swift */; };
 		5A295BDB257BB60E002E3ECF /* GroupsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A295BDA257BB60E002E3ECF /* GroupsDatabase.swift */; };
 		5A295C0425862BA3002E3ECF /* Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A295C0325862BA3002E3ECF /* Like.swift */; };
+		5A7B517F258E0C510007AC99 /* UIBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7B517E258E0C510007AC99 /* UIBezierPath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		5A295BD7257BB5BA002E3ECF /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		5A295BDA257BB60E002E3ECF /* GroupsDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsDatabase.swift; sourceTree = "<group>"; };
 		5A295C0325862BA3002E3ECF /* Like.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Like.swift; sourceTree = "<group>"; };
+		5A7B517E258E0C510007AC99 /* UIBezierPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBezierPath.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				5A295BB9257BAE8F002E3ECF /* FriendsPhotoCollectionViewController.swift */,
 				5A295BBD257BAEEC002E3ECF /* FriendsPhotoCollectionViewCell.swift */,
 				5A295C0325862BA3002E3ECF /* Like.swift */,
+				5A7B517E258E0C510007AC99 /* UIBezierPath.swift */,
 			);
 			path = FriendsPhoto;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A7B517F258E0C510007AC99 /* UIBezierPath.swift in Sources */,
 				5A295BB5257BAE12002E3ECF /* MyFriendsTableViewCell.swift in Sources */,
 				5A1AED92257504900019EE39 /* LoginViewController.swift in Sources */,
 				5A295BC6257BAFF9002E3ECF /* MyGroupsTableViewCell.swift in Sources */,
