@@ -355,10 +355,31 @@
                                                 <constraint firstAttribute="width" constant="200" id="iro-j8-0Jn"/>
                                             </constraints>
                                         </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xU-0S-bOt" customClass="Like" customModule="Social_Network" customModuleProvider="target">
+                                            <rect key="frame" x="237" y="208" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="AG7-5l-iCs"/>
+                                                <constraint firstAttribute="height" constant="30" id="RLN-qG-w6p"/>
+                                            </constraints>
+                                            <state key="normal">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="strokeWidth">
+                                                    <real key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="filled" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstItem="AIk-qE-SI7" firstAttribute="leading" secondItem="9zx-Yx-lDn" secondAttribute="leading" id="FpZ-tX-uyU"/>
+                                        <constraint firstAttribute="trailing" secondItem="0xU-0S-bOt" secondAttribute="trailing" id="PUY-yd-Q4g"/>
+                                        <constraint firstAttribute="bottom" secondItem="0xU-0S-bOt" secondAttribute="bottom" id="XGC-pM-4Xb"/>
                                         <constraint firstAttribute="trailing" secondItem="AIk-qE-SI7" secondAttribute="trailing" id="k4u-na-2Wn"/>
                                         <constraint firstAttribute="bottom" secondItem="AIk-qE-SI7" secondAttribute="bottom" id="op8-ze-fEb"/>
                                         <constraint firstItem="AIk-qE-SI7" firstAttribute="top" secondItem="9zx-Yx-lDn" secondAttribute="top" id="q8S-kf-Ttv"/>
@@ -420,6 +441,11 @@
             <point key="canvasLocation" x="1992.753623188406" y="-206.25"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="0xU-0S-bOt">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+    </designables>
     <resources>
         <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
