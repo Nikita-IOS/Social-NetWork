@@ -27,6 +27,8 @@
 		5A295BDB257BB60E002E3ECF /* GroupsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A295BDA257BB60E002E3ECF /* GroupsDatabase.swift */; };
 		5A295C0425862BA3002E3ECF /* Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A295C0325862BA3002E3ECF /* Like.swift */; };
 		5A7B517F258E0C510007AC99 /* UIBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7B517E258E0C510007AC99 /* UIBezierPath.swift */; };
+		5A7B518425937B730007AC99 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7B518225937B730007AC99 /* CustomTableViewCell.swift */; };
+		5A7B518525937B730007AC99 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A7B518325937B730007AC99 /* CustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		5A295BDA257BB60E002E3ECF /* GroupsDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsDatabase.swift; sourceTree = "<group>"; };
 		5A295C0325862BA3002E3ECF /* Like.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Like.swift; sourceTree = "<group>"; };
 		5A7B517E258E0C510007AC99 /* UIBezierPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBezierPath.swift; sourceTree = "<group>"; };
+		5A7B518225937B730007AC99 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		5A7B518325937B730007AC99 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,8 @@
 			children = (
 				5A295BC9257BB063002E3ECF /* AllGroupsTableViewController.swift */,
 				5A295BCC257BB080002E3ECF /* AllGroupsTableViewCell.swift */,
+				5A7B518225937B730007AC99 /* CustomTableViewCell.swift */,
+				5A7B518325937B730007AC99 /* CustomTableViewCell.xib */,
 			);
 			path = AllGroups;
 			sourceTree = "<group>";
@@ -208,6 +214,7 @@
 			files = (
 				5A1AED9A257504920019EE39 /* LaunchScreen.storyboard in Resources */,
 				5A1AED97257504920019EE39 /* Assets.xcassets in Resources */,
+				5A7B518525937B730007AC99 /* CustomTableViewCell.xib in Resources */,
 				5A1AED95257504900019EE39 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A7B518425937B730007AC99 /* CustomTableViewCell.swift in Sources */,
 				5A7B517F258E0C510007AC99 /* UIBezierPath.swift in Sources */,
 				5A295BB5257BAE12002E3ECF /* MyFriendsTableViewCell.swift in Sources */,
 				5A1AED92257504900019EE39 /* LoginViewController.swift in Sources */,
