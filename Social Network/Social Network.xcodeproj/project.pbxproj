@@ -18,9 +18,7 @@
 		5A295BBA257BAE8F002E3ECF /* FriendsPhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A295BB9257BAE8F002E3ECF /* FriendsPhotoCollectionViewController.swift */; };
 		5A295BBE257BAEEC002E3ECF /* FriendsPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A295BBD257BAEEC002E3ECF /* FriendsPhotoCollectionViewCell.swift */; };
 		5A295BC2257BAF6D002E3ECF /* MyGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A295BC1257BAF6D002E3ECF /* MyGroupsTableViewController.swift */; };
-		5A295BC6257BAFF9002E3ECF /* MyGroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A295BC5257BAFF9002E3ECF /* MyGroupsTableViewCell.swift */; };
 		5A295BCA257BB063002E3ECF /* AllGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A295BC9257BB063002E3ECF /* AllGroupsTableViewController.swift */; };
-		5A295BCD257BB080002E3ECF /* AllGroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A295BCC257BB080002E3ECF /* AllGroupsTableViewCell.swift */; };
 		5A295BD1257BB12D002E3ECF /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A295BD0257BB12D002E3ECF /* Friend.swift */; };
 		5A295BD4257BB1AF002E3ECF /* FriendsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A295BD3257BB1AF002E3ECF /* FriendsDatabase.swift */; };
 		5A295BD8257BB5BA002E3ECF /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A295BD7257BB5BA002E3ECF /* Group.swift */; };
@@ -45,9 +43,7 @@
 		5A295BB9257BAE8F002E3ECF /* FriendsPhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsPhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		5A295BBD257BAEEC002E3ECF /* FriendsPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		5A295BC1257BAF6D002E3ECF /* MyGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsTableViewController.swift; sourceTree = "<group>"; };
-		5A295BC5257BAFF9002E3ECF /* MyGroupsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsTableViewCell.swift; sourceTree = "<group>"; };
 		5A295BC9257BB063002E3ECF /* AllGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsTableViewController.swift; sourceTree = "<group>"; };
-		5A295BCC257BB080002E3ECF /* AllGroupsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsTableViewCell.swift; sourceTree = "<group>"; };
 		5A295BD0257BB12D002E3ECF /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		5A295BD3257BB1AF002E3ECF /* FriendsDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsDatabase.swift; sourceTree = "<group>"; };
 		5A295BD7257BB5BA002E3ECF /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
@@ -88,9 +84,8 @@
 		5A1AED8C257504900019EE39 /* Social Network */ = {
 			isa = PBXGroup;
 			children = (
+				5A7B5189259380530007AC99 /* Groups */,
 				5A295BCF257BB10B002E3ECF /* Database */,
-				5A295BC8257BB00B002E3ECF /* AllGroups */,
-				5A295BC0257BAF22002E3ECF /* MyGroups */,
 				5A295BB8257BAE2D002E3ECF /* FriendsPhoto */,
 				5A295BB0257BAD7A002E3ECF /* FriendsList */,
 				5A1AED8D257504900019EE39 /* AppDelegate.swift */,
@@ -124,26 +119,6 @@
 			path = FriendsPhoto;
 			sourceTree = "<group>";
 		};
-		5A295BC0257BAF22002E3ECF /* MyGroups */ = {
-			isa = PBXGroup;
-			children = (
-				5A295BC1257BAF6D002E3ECF /* MyGroupsTableViewController.swift */,
-				5A295BC5257BAFF9002E3ECF /* MyGroupsTableViewCell.swift */,
-			);
-			path = MyGroups;
-			sourceTree = "<group>";
-		};
-		5A295BC8257BB00B002E3ECF /* AllGroups */ = {
-			isa = PBXGroup;
-			children = (
-				5A295BC9257BB063002E3ECF /* AllGroupsTableViewController.swift */,
-				5A295BCC257BB080002E3ECF /* AllGroupsTableViewCell.swift */,
-				5A7B518225937B730007AC99 /* CustomTableViewCell.swift */,
-				5A7B518325937B730007AC99 /* CustomTableViewCell.xib */,
-			);
-			path = AllGroups;
-			sourceTree = "<group>";
-		};
 		5A295BCF257BB10B002E3ECF /* Database */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +128,17 @@
 				5A295BDA257BB60E002E3ECF /* GroupsDatabase.swift */,
 			);
 			path = Database;
+			sourceTree = "<group>";
+		};
+		5A7B5189259380530007AC99 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				5A7B518225937B730007AC99 /* CustomTableViewCell.swift */,
+				5A7B518325937B730007AC99 /* CustomTableViewCell.xib */,
+				5A295BC1257BAF6D002E3ECF /* MyGroupsTableViewController.swift */,
+				5A295BC9257BB063002E3ECF /* AllGroupsTableViewController.swift */,
+			);
+			path = Groups;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +216,6 @@
 				5A7B517F258E0C510007AC99 /* UIBezierPath.swift in Sources */,
 				5A295BB5257BAE12002E3ECF /* MyFriendsTableViewCell.swift in Sources */,
 				5A1AED92257504900019EE39 /* LoginViewController.swift in Sources */,
-				5A295BC6257BAFF9002E3ECF /* MyGroupsTableViewCell.swift in Sources */,
 				5A295BD1257BB12D002E3ECF /* Friend.swift in Sources */,
 				5A295BBE257BAEEC002E3ECF /* FriendsPhotoCollectionViewCell.swift in Sources */,
 				5A295BC2257BAF6D002E3ECF /* MyGroupsTableViewController.swift in Sources */,
@@ -241,7 +226,6 @@
 				5A295C0425862BA3002E3ECF /* Like.swift in Sources */,
 				5A295BBA257BAE8F002E3ECF /* FriendsPhotoCollectionViewController.swift in Sources */,
 				5A295BCA257BB063002E3ECF /* AllGroupsTableViewController.swift in Sources */,
-				5A295BCD257BB080002E3ECF /* AllGroupsTableViewCell.swift in Sources */,
 				5A1AED8E257504900019EE39 /* AppDelegate.swift in Sources */,
 				5A1AED90257504900019EE39 /* SceneDelegate.swift in Sources */,
 			);

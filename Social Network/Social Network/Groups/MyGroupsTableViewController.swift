@@ -11,7 +11,6 @@ class MyGroupsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -23,7 +22,7 @@ class MyGroupsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MyGroupsTableViewCell", for: indexPath) as! MyGroupsTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell", for: indexPath) as! CustomTableViewCell
         let groupTitle = groupDatabase.myGrouplist[indexPath.row].title
         let groupImage = groupDatabase.myGrouplist[indexPath.row].picture
         cell.groupLabel.text = groupTitle
